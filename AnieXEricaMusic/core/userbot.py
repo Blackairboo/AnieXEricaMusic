@@ -11,35 +11,35 @@ assistantids = []
 class Userbot(Client):
     def __init__(self):
         self.one = Client(
-            name="AnieXEricaAss1",
+            name="LyraAss1",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING1),
             no_updates=True,
         )
         self.two = Client(
-            name="AnieXEricaAss2",
+            name="LyraAss2",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING2),
             no_updates=True,
         )
         self.three = Client(
-            name="AnieXEricaAss3",
+            name="LyraAss3",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING3),
             no_updates=True,
         )
         self.four = Client(
-            name="AnieXEricaAss4",
+            name="LyraAss4",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING4),
             no_updates=True,
         )
         self.five = Client(
-            name="AnieXEricaAss5",
+            name="LyraAss5",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING5),
@@ -50,16 +50,7 @@ class Userbot(Client):
         LOGGER(__name__).info(f"Starting Assistants...")
         if config.STRING1:
             await self.one.start()
-            try:
-                await self.one.join_chat("AmBotYT")
-                await self.one.join_chat("AM_YTSupport")
-                await self.one.join_chat("AbhiModszYT_Return")
-                await self.one.join_chat("TGGojoSatoRu")
-                await self.one.join_chat("SuperBanSBots")
-                await self.one.join_chat("About_AMBot")
-                await self.one.join_chat("TeamSuperBan")
-            except:
-                pass
+            
             assistants.append(1)
             try:
                 await self.one.send_message(config.LOGGER_ID, "Assistant 1 Started")
@@ -76,16 +67,7 @@ class Userbot(Client):
 
         if config.STRING2:
             await self.two.start()
-            try:
-                await self.two.join_chat("AmBotYT")
-                await self.two.join_chat("AM_YTSupport")
-                await self.two.join_chat("AbhiModszYT_Return")
-                await self.two.join_chat("TGGojoSatoRu")
-                await self.two.join_chat("SuperBanSBots")
-                await self.two.join_chat("About_AMBot")
-                await self.two.join_chat("TeamSuperBan")
-            except:
-                pass
+            
             assistants.append(2)
             try:
                 await self.two.send_message(config.LOGGER_ID, "Assistant 2 Started")
@@ -102,16 +84,7 @@ class Userbot(Client):
 
         if config.STRING3:
             await self.three.start()
-            try:
-                await self.three.join_chat("AmBotYT")
-                await self.three.join_chat("AM_YTSupport")
-                await self.three.join_chat("AbhiModszYT_Return")
-                await self.three.join_chat("TGGojoSatoRu")
-                await self.three.join_chat("SuperBanSBots")
-                await self.three.join_chat("About_AMBot")
-                await self.three.join_chat("TeamSuperBan")
-            except:
-                pass
+            
             assistants.append(3)
             try:
                 await self.three.send_message(config.LOGGER_ID, "Assistant 3 Started")
@@ -128,15 +101,7 @@ class Userbot(Client):
 
         if config.STRING4:
             await self.four.start()
-            try:
-                await self.four.join_chat("AmBotYT")
-                await self.four.join_chat("AM_YTSupport")
-                await self.four.join_chat("AbhiModszYT_Return")
-                await self.four.join_chat("TGGojoSatoRu")
-                await self.four.join_chat("SuperBanSBots")
-                await self.four.join_chat("About_AMBot")
-            except:
-                pass
+            
             assistants.append(4)
             try:
                 await self.four.send_message(config.LOGGER_ID, "Assistant 5 Started")
@@ -153,15 +118,7 @@ class Userbot(Client):
 
         if config.STRING5:
             await self.five.start()
-            try:
-                await self.five.join_chat("AmBotYT")
-                await self.five.join_chat("AM_YTSupport")
-                await self.five.join_chat("AbhiModszYT_Return")
-                await self.five.join_chat("TGGojoSatoRu")
-                await self.five.join_chat("SuperBanSBots")
-                await self.five.join_chat("About_AMBot")
-            except:
-                pass
+            
             assistants.append(5)
             try:
                 await self.five.send_message(config.LOGGER_ID, "Assistant 5 Started")
